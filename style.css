@@ -7,6 +7,7 @@
     font-family: Overbrushing;
     src: url("Overbrushing.otf")
 }
+
 .body{
     background-image: url("images/homepage_background.png");
 }
@@ -72,7 +73,22 @@
     outline: 2px solid rgb(215, 157, 11);
     outline-offset: -2px;
     transition: outline-offset 200ms ease;
-    
+    transition:0.3s;
+  background-color:rgba(230, 165, 16, 0.821);
+  animation: glow 5s infinite ;
+  transition:0.5s;
+}
+
+@keyframes glow{
+    0%{
+    box-shadow: 5px 5px 20px rgb(209, 189, 124),-5px -5px 20px rgb(225, 190, 94);
+  }
+    50%{
+    box-shadow: 5px 5px 20px rgb(7, 121, 109),-5px -5px 20px rgb(81, 224, 210)
+    }
+    100%{
+    box-shadow: 5px 5px 20px rgb(2, 54, 56),-5px -5px 20px rgb(214, 179, 38)
+    }
 }
 button:hover {
 outline-offset: 3px;
